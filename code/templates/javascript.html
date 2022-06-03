@@ -1,4 +1,4 @@
-$def with(resultado)
+
 <a href="/">Regresar</a>
 <h1>Web dinámica del lado del servidor</h1>
 
@@ -9,7 +9,10 @@ $def with(resultado)
     <label>Numero 2</label>
     <input type="number" name="num2" value="0">
     <br>
-    <input type="submit" value="Sumar">
+    <label>Resultado</label>
+    <input type="number" readonly id="resultado" value="0">
+    <br>
+    <input type="button" onclick="sumar()" value="Sumar">
 </form>
 
 <script>

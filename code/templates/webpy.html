@@ -1,0 +1,22 @@
+$def with(resultado)
+<a href="/">Regresar</a>
+<h1>Web dinámica del lado del servidor</h1>
+
+<form action="" method="POST">
+    <label>Numero 1</label>
+    <input type="number" name="num1" value="0">
+    <br>
+    <label>Numero 2</label>
+    <input type="number" name="num2" value="0">
+    <br>
+    <input type="submit" value="Sumar">
+</form>
+
+<script>
+    function sumar(){
+        var num1 = document.getElementById('num1').value;
+        var num2 = document.getElementById('num2').value;
+        var resultado = parseInt(num1) + parseInt(num2);
+        document.getElementById('resultado').value = resultado;
+    }
+</script>

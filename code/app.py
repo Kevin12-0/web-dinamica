@@ -10,12 +10,15 @@ render = web.template.render('templates/',base='layout')
 
 class Index:
     def GET(self):
-        return render.Index()
+        return render.index()
 
 class Webpy:
     def GET(self):
-        return render.Webpy()
+        return render.webpy()
 
 class Javascript:
     def GET(self):
-        return render.Javascript()
+        return render.javascript()
+
+if __name__ == "__main__":
+    app.run()
