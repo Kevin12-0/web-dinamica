@@ -1,8 +1,3 @@
-# web-dinamica
-pagina web dinamica
-
-instalacion de php en docker con file
-'''
 FROM ubuntu:20.04
 LABEL description = 'PHP CONTAINER SERV'
 ARG DEBIAN_FRONTEND=noninteractive
@@ -23,9 +18,3 @@ RUN mkdir -p /run/php && \
     chown -R www-data:www-data /run/php
 VOLUME ["/etc/nginx/sites-enabled", "/etc/nginx/certs", "/etc/nginx/conf.d", "/var/log/nginx", "/var/www/html"]
 EXPOSE 80 443
-'''
-
-docker volume
-'''
-
-'''
